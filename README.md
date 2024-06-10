@@ -24,4 +24,13 @@ The docker image is based on the [jupyter/minimal-notebook](https://jupyter-dock
 
 ### Create Cyverse DE Tool
 
+<img src="/images/cyverse_tool.png" width=300>
+
+<img src="/images/cyverse_tool2.png" width=300>
+
+<img src="/images/cyverse_tool3.png" width=300>
+
+<img src="/images/cyverse_tool4.png" width=300>
+
+<img src="/images/cyverse_tool5.png" width=300>
 
