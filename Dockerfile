@@ -1,5 +1,5 @@
 # Read this regarding runtime: https://stackoverflow.com/questions/59691207/docker-build-with-nvidia-runtime
-# IMPORTANT: torch will NOT recognize cuda if installed in base: requires its own env.
+
 FROM quay.io/jupyter/minimal-notebook:lab-4.2.1
 
 USER root
@@ -45,14 +45,6 @@ WORKDIR /home/jovyan
 
 EXPOSE 8888
 
-# Install pytorch in its own environment
-#COPY environment.yml /home/jovyan/environment.yml
-#RUN conda install -c conda-forge mamba -y
-#RUN mamba env create -f environment.yml -y && \
- #   mamba install -n pytorch-gpu ipykernel -y && \
- #   /opt/conda/envs/pytorch-gpu/bin/python -m ipykernel install --name "pytorch-gpu" --user && \
- #   echo "source activate pytorch-gpu" >> ~/.bashrc && \
- #   /bin/bash -c "source activate pytorch-gpu"
 
 # Install Jupyter-AI https://jupyter-ai.readthedocs.io/en/latest/users/index.html#installation
 RUN pip install jupyter-ai 
