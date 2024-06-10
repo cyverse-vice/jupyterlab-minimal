@@ -42,3 +42,8 @@ Fill out the tool information as such
 
 <img src="/images/cyverse_tool5.png" width=400>
 
+<br/>
+
+Go to the 'Tools' under the Admin. You need admin privaledges for this to be visible. 
+
+
