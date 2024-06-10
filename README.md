@@ -18,6 +18,8 @@ The docker image is based on the [jupyter/minimal-notebook](https://jupyter-dock
 
 `docker run -it --rm --gpus=all -p 8888:8888 harbor.cyverse.org/vice/jupyter/minimal:gpu-2405`
 
+Open your browser and go to https://localhost:8888
+
 ### Push to Cyverse Harbor
 
 `docker push harbor.cyverse.org/vice/jupyter/minimal:gpu-2405`
@@ -47,6 +49,25 @@ Fill out the tool information as such
 Go to the 'Tools' under the Admin. You need admin privaledges for this to be visible. 
 
 <img src="/images/cyverse_tool6.png" width=400>
+
+### Create a Cyverse App 
+
+From the Tool you created, create an interactive Cyverse App
+
+I created an app called 'JupyterLab Minimal GPU'
+
+### How do I know if the GPU is Enabled?
+
+After launching the Cyverse App, open a terminal in the jupyterlab and type:
+
+`nvidia-smi -L`
+
+The output should say the name of the GPU (e.g., NVIDIA GeForce RTX 2080)
+
+
+
+
+
 
 
 
