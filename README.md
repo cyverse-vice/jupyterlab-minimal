@@ -8,6 +8,20 @@ The docker image is based on the [jupyter/minimal-notebook](https://jupyter-dock
 
 `FROM quay.io/jupyter/minimal-notebook:lab-4.2.1`
 
-### Build Locally
+### Build and Run Locally
 
-git clone 
+`git clone git@github.com:cyverse-vice/jupyterlab-minimal.git`
+
+`cd jupyterlab-minimal`
+
+`docker build -t harbor.cyverse.org/vice/jupyter/minimal:gpu-2405 .`
+
+`docker run -it --rm --gpus=all -p 8888:8888 harbor.cyverse.org/vice/jupyter/minimal:gpu-2405`
+
+### Push to Cyverse Harbor
+
+`docker push harbor.cyverse.org/vice/jupyter/minimal:gpu-2405`
+
+### Create Cyverse DE Tool
+
+
